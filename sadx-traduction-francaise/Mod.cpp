@@ -33,20 +33,20 @@ extern "C"
 		WriteData((const char**)0x54CCFE, "Chaos 2");
 		WriteData((const char**)0x5509DC, "Chaos 4");
 		WriteData((const char**)0x559872, "Chaos 6");
-		WriteData((const char**)0x56037F, "Chaos Parfait");
+		WriteData((const char**)0x56037F, "Perfect Chaos");
 		WriteData((const char**)0x587DA4, "ZERO");
-		WriteData((const char**)0x62616D, "SCORE ELEVE");
-		WriteData((const char**)0x626215, "DOCTOR ROBOTNIK");
+		WriteData((const char**)0x62616D, "MEILLEUR SCORE");
+		WriteData((const char**)0x626215, "DOCTEUR EGGMAN");
 		WriteData((const char**)0x626279, "COMMENCER");
 		WriteData((const char**)0x6262C9, "TEMPS");
-		WriteData((const char**)0x6262D8, "COMPTE");
-		WriteData((const char**)0x626401, "JEU TERMINE");
-		WriteData((const char**)0x626458, "FELICITATIONS");
-		WriteData((const char**)0x6264C0, "VOUS GAGNE LA PLUME DU GUERRIER");
-		WriteData((const char**)0x6264D3, "VOUS GAGNE LE LONG MARTEAU");
-		WriteData((const char**)0x62652A, "VOUS OBTENU LE MEILLEUR SCORE");
-		WriteData((const char**)0x6283F5, "JEU TERMINE");
-		WriteData((const char**)0x7595DF, "PRESSE A POUR TUER LE CHAO");
+		WriteData((const char**)0x6262D8, "COMPTEUR");
+		WriteData((const char**)0x626401, "GAME OVER");
+		WriteData((const char**)0x626458, "BRAVO");
+		WriteData((const char**)0x6264C0, "TU REMPORTE LA PLUME DU GUERRIER");
+		WriteData((const char**)0x6264D3, "TU REMPORTE LE GROS MARTEAU");
+		WriteData((const char**)0x62652A, "TU AS LE MEILLEUR SCORE");
+		WriteData((const char**)0x6283F5, "GAME OVER");
+		WriteData((const char**)0x7595DF, "APPUIE SUR A POUR TUER LE CHAO");
 		char pathbuf[MAX_PATH];
 		HMODULE HDGUI = GetModuleHandle(L"HD_GUI");
 		//PVRs
@@ -149,7 +149,7 @@ extern "C"
 			ReplacePNG_StageS("S_STAGE08_F");
 			ReplacePNG_StageS("S_STAGE09_F");
 			ReplacePNG_StageS("S_STAGE10_F");
-			ReplacePNG_StageS("T_SGGCARRIER_F");
+			ReplacePNG_StageS("T_EGGCARRIER_F");
 			ReplacePNG_StageS("T_MISTICRUIN_F");
 			ReplacePNG_StageS("T_STATIONSQUARE_F");
 		}
