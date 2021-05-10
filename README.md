@@ -1,2 +1,2 @@
-# SADX-Traduction-Francaise
-Código para el mod de Kesnos, basado en el código creado por PkR y Kaori.
+# SADX-Traduction-Française
+Code pour le mod de Kesnos, basé sur le code créé par PkR et Kaori.
