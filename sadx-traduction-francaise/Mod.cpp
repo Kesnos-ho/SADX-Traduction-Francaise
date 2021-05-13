@@ -46,7 +46,7 @@ extern "C"
 		WriteData((const char**)0x6264D3, "TU REMPORTES LE GROS MARTEAU");
 		WriteData((const char**)0x62652A, "TU AS LE MEILLEUR SCORE");
 		WriteData((const char**)0x6283F5, "GAME OVER");
-		WriteData((const char**)0x7595DF, "APPUIE SUR A POUR TUER LE CHAO");
+		WriteData((const char**)0x7595DF, "APPUIE SUR A POUR ABANDONNER LE CHAO");
 		char pathbuf[MAX_PATH];
 		HMODULE HDGUI = GetModuleHandle(L"HD_GUI");
 		//PVRs
