@@ -42,8 +42,8 @@ extern "C"
 		WriteData((const char**)0x6262D8, "COMPTEUR");
 		WriteData((const char**)0x626401, "GAME OVER");
 		WriteData((const char**)0x626458, "BRAVO");
-		WriteData((const char**)0x6264C0, "TU REMPORTE LA PLUME DU GUERRIER");
-		WriteData((const char**)0x6264D3, "TU REMPORTE LE GROS MARTEAU");
+		WriteData((const char**)0x6264C0, "TU REMPORTES LA PLUME DU GUERRIER");
+		WriteData((const char**)0x6264D3, "TU REMPORTES LE GROS MARTEAU");
 		WriteData((const char**)0x62652A, "TU AS LE MEILLEUR SCORE");
 		WriteData((const char**)0x6283F5, "GAME OVER");
 		WriteData((const char**)0x7595DF, "APPUIE SUR A POUR TUER LE CHAO");
