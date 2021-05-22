@@ -28,6 +28,10 @@ extern "C"
 	__declspec(dllexport) __declspec(dllexport) void __cdecl Init(const char* path, const HelperFunctions& helperFunctions)
 	{
 		//Init stuff
+		WriteData((const char**)0x40BE98, "Sauvegarde...");
+		WriteData((const char**)0x40BE09, "Chargement...");
+		WriteData((const char**)0x50342D, "Chargement...");
+		WriteData((const char**)0x503469, "Chargement...");
 		WriteData((const char**)0x504B5B, "Nouvelle Partie");
 		WriteData((const char**)0x5482A8, "Chaos 0");
 		WriteData((const char**)0x54CCFE, "Chaos 2");
