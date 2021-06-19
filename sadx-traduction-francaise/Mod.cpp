@@ -8,7 +8,7 @@ DataArray(TitleCardTexture, TailsTitleCards, 0x91C3A8, 5);
 DataArray(TitleCardTexture, KnucklesTitleCards, 0x91C3D0, 5);
 DataArray(TitleCardTexture, AmyTitleCards, 0x91C3F8, 3);
 DataArray(TitleCardTexture, BigTitleCards, 0x91C410, 4);
-DataArray(TitleCardTexture, GammaTitleCards, 0x91C430, 4);
+DataArray(TitleCardTexture, GammaTitleCards, 0x91C430, 5);
 DataArray(TitleCardTexture, AdventureTitleCards, 0x91C458, 9);
 DataArray(TitleCardTexture, SubgameTitleCards, 0x91C4A0, 5);
 
@@ -94,6 +94,7 @@ extern "C"
 		GammaTitleCards[1].TextureName = "e_stage02_f";
 		GammaTitleCards[2].TextureName = "e_stage03_f";
 		GammaTitleCards[3].TextureName = "e_stage04_f";
+		GammaTitleCards[4].TextureName = "e_stage05_f";
 		//Adventure Fields
 		AdventureTitleCards[0].TextureName = "t_stationsquare_f";
 		AdventureTitleCards[1].TextureName = "t_stationsquare_f";
