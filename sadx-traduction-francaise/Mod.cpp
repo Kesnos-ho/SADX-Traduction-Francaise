@@ -73,7 +73,10 @@ extern "C"
 		WriteData((const char**)0x10D7968, "\t\tLa suppression a échoué."); // fr
 		
 		// Monkey Detonator messages
-		WriteData((const char**)0x111CB68, '\aÇa dit "destructeur de singes".'); // fr
+
+		WriteData((const char**)0x111CB68, "\aÇa dit \"destructeur de singes\"."); // fr
+
+
 		WriteData((const char**)0x111CB6C, "\a'Appuyez sur le bouton pour détruire le singe."); // fr
 		WriteData((const char**)0x111CB38, "\aInterrupteur activé!"); // fr
 		WriteData((const char**)0x111CB10, "\aLe bouton a été pressé,\nmais rien ne s'est passé."); // fr
@@ -117,14 +120,14 @@ extern "C"
 		
 		// ZERO (when timer is 01:00:00)
 		WriteData((const char**)0x8046E4, "\aIl doit bien avoir un point faible.");
-		WriteData((const char**)0x8046EС, "\aContinuez de l'attaquer jusqu'à \nce que vous le trouviez!");
+		WriteData((const char**)0x8046EC, "\aContinuez de l'attaquer jusqu'à \nce que vous le trouviez!");
 		
 		// Perfect Chaos
 		WriteData((const char**)0x800544, "\aQuand vous atteindrez votre vitesse maximale,\nvous deviendrez une boule électrique.");
 		WriteData((const char**)0x80054C, "\aC'est avec ça que vous parviendrez à attaquer Chaos!");
 
 		//Mission tutorial texts
-		#region fr
+		//region fr
 		WriteData((const char**)0x2BC57B8, "Ton but est de trouver ");
 		WriteData((const char**)0x2BC57BC, "\"l'enveloppe de mission\"");
 		WriteData((const char**)0x2BC57C0, "puis de la compléter");
