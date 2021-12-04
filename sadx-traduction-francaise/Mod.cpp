@@ -45,7 +45,7 @@ extern "C"
 		WriteData((const char**)0x917DE4, "Appuie sur \u00e9chap. pour retourner en arri\u00e8re"); // fr
 		WriteData((const char**)0x917DF8, "Utiliser cette touche ?"); // fr
 		WriteData((const char**)0x917E0C, "Appuie sur la touche \u00e0 utiliser"); // fr
-		WriteData((const char**)0x90C4A8, "En es-tu s\u00fbr ? Cette action mettra fin \u00e0 la partie et \nte \u00e0 l'\u00e9cran de s\u00e9lection."); // fr
+		WriteData((const char**)0x90C4A8, "En es-tu s\u00fbr ? Cette action mettra fin \u00e0 la partie et \nte renverra \u00e0 l'\u00e9cran de s\u00e9lection."); // fr
 		WriteData((const char**)0x90C4BC, "En es-tu s\u00fbr ? Cette action mettra fin au niveau et \nte renverra dans la zone d'exploration."); // fr
 		WriteData((const char**)0x90C4D0, "Es-tu s\u00fbr de vouloir quitter la partie ? \nCela te renverra au menu principal."); // fr
 		WriteData((const char**)0x4B54DB, "'%s'\na \u00e9t\u00e9 ajout\u00e9 \u00e0 la liste de jeux Game Gear."); // fr
@@ -128,22 +128,22 @@ extern "C"
 
 		//Mission tutorial texts
 		//region fr
-		WriteData((const char**)0x2BC57B8, "Ton but est de trouver ");
-		WriteData((const char**)0x2BC57BC, "\"l'enveloppe de mission\"");
-		WriteData((const char**)0x2BC57C0, "puis de la compl\u00e9ter");
-		WriteData((const char**)0x2BC57C4, "dans le monde du jeu");
-		WriteData((const char**)0x2BC57C8, "gr\u00e2ce au conseil affich\u00e9.");
+		WriteData((const char**)0x2BC57B8, "Ton but est de trouver l'enveloppe de");
+		WriteData((const char**)0x2BC57BC, "mission puis de compl\u00e9ter");
+		WriteData((const char**)0x2BC57C0, "la mission gr\u00e2ce au conseil");
+		WriteData((const char**)0x2BC57C4, "qu'elle contient.");
+		WriteData((const char**)0x2BC57C8, "");
 		
-		WriteData((const char**)0x2BC57CC, "Le conseil s'affichera en");
-		WriteData((const char**)0x2BC57D0, "touchant \"l'enveloppe de");
-		WriteData((const char**)0x2BC57D4, "mission\". Tu devras alors deviner");
-		WriteData((const char**)0x2BC57D8, "l'endroit o\u00f9 il faut aller et");
-		WriteData((const char**)0x2BC57DC, "ce qu'il faut faire pour r\u00e9ussir cette mission.");
+		WriteData((const char**)0x2BC57CC, "Le conseil s'affichera en touchant");
+		WriteData((const char**)0x2BC57D0, "l'enveloppe. Tu devras alors");
+		WriteData((const char**)0x2BC57D4, "deviner l'endroit o\u00f9 il faut aller");
+		WriteData((const char**)0x2BC57D8, "et ce qu'il faut faire pour la");
+		WriteData((const char**)0x2BC57DC, "terminer.");
 
-		WriteData((const char**)0x2BC57E0, "Il existe 60 missions et");
-		WriteData((const char**)0x2BC57E4, "6 personnages pour les compl\u00e9ter (Sonic, Tails,");
-		WriteData((const char**)0x2BC57E8, "Knuckles, Amy, E-102,");
-		WriteData((const char**)0x2BC57EC, "Big).");
+		WriteData((const char**)0x2BC57E0, "Il existe 60 missions et 6 personnages");
+		WriteData((const char**)0x2BC57E4, "pour les compl\u00e9ter (Sonic, Tails,");
+		WriteData((const char**)0x2BC57E8, "Knuckles, Amy, E-102, et Big).");
+		WriteData((const char**)0x2BC57EC, "");
 
 		//Init stuff
 		WriteData((const char**)0x40BE98, "Sauvegarde...");
