@@ -11,7 +11,7 @@ Kesnos : traducteur
 
 kawaiikaorichan : codes
 
-Windii : A fait la traduction original
+Windii : A fait la traduction originale
 
 PKR : Créateur de la Dreamcast Conversion
 
