@@ -52,16 +52,16 @@ extern "C"
 		
 		// New lure messages
 		WriteData((const char**)0x9818A0, "\aPowerup de l'app\u00e2t!"); // fr
-		WriteData((const char**)0x9818A4, "\aUtilise le pour attraper de\nplus gros poissons !"); // fr
+		WriteData((const char**)0x9818A4, "\aUtilise-le pour attraper de\nplus gros poissons !"); // fr
 		
 		// Keys messages
-		WriteData((const char**)0x111C6A8, "\aLa clef flotte..."); // fr
-		WriteData((const char**)0x111C680, "\aCela doit \u00eatre une autre clef..."); // fr
-		WriteData((const char**)0x7D3AB1, "\aUne statue en argent...\nElle ressemble \u00e0 une clef."); // fr
-		WriteData((const char**)0x7D3A72, "\aUne statue en or...\nElle ressemble \u00e0 une clef."); // fr
-		WriteData((const char**)0x7D3A2B, "\aLa Wind Stone. On dirait une clef.\nLe motif sur la pierre doit contenir un message."); // fr
-		WriteData((const char**)0x7D39E0, "\aL'Ice Stone. On dirait une clef.\nJe pourrais peut \u00eatre l'utiliser aux Mystic Ruins."); // fr
-		WriteData((const char**)0x2BBF538, "\aL'Ice Stone... On dirait une clef.\nJe pourrais peut \u00eatre l'utiliser aux Mystic Ruins."); // fr
+		WriteData((const char**)0x111C6A8, "\aLa clé flotte..."); // fr
+		WriteData((const char**)0x111C680, "\aCela doit \u00eatre une autre clé..."); // fr
+		WriteData((const char**)0x7D3AB1, "\aUne statue en argent...\nElle ressemble \u00e0 une clé."); // fr
+		WriteData((const char**)0x7D3A72, "\aUne statue en or...\nElle ressemble \u00e0 une clé."); // fr
+		WriteData((const char**)0x7D3A2B, "\aLa Pierre des vents. On dirait une clé.\nLe motif sur la pierre doit contenir un message."); // fr
+		WriteData((const char**)0x7D39E0, "\aLa pierre des glaces. On dirait une clé.\nJe pourrais peut \u00eatre l'utiliser aux Mystic Ruins."); // fr
+		WriteData((const char**)0x2BBF538, "\aLa pierre des glaces... On dirait une clé.\nJe pourrais peut \u00eatre l'utiliser aux Mystic Ruins."); // fr
 		
 		// Deleting file messages	
 		WriteData((const char**)0x10D7A44, "\aValider"); // fr
@@ -74,7 +74,7 @@ extern "C"
 		
 		// Monkey Detonator messages
 
-		WriteData((const char**)0x111CB68, "\aÇa dit \"destructeur de singes\"."); // fr
+		WriteData((const char**)0x111CB68, "\a\u00c7a dit \"destructeur de singes\"."); // fr
 
 
 		WriteData((const char**)0x111CB6C, "\a'Appuyez sur le bouton pour d\u00e9truire le singe."); // fr
@@ -91,11 +91,11 @@ extern "C"
 		WriteData((const char**)0x88C730, "\aPar ici!"); //  fr
 		WriteData((const char**)0x803484, "\aAttention! Il pr\u00e9pare un mauvais coup."); // fr
 		// Chaos 0  (when timer is 01:00:00)
-		WriteData((const char**)0x7FD51C, "\aSautez et appuyez de nouveau sur le\nbouton de saut pour faire une Homing Attack!");
+		WriteData((const char**)0x7FD51C, "\aSautez et appuyez de nouveau sur le\nbouton de saut pour faire une Homing Attack !");
 		// Chaos 2
-		WriteData((const char**)0x7FD960, "\aVisez la t\u00eate de Chaos\nquand il ne s'y attend pas!");
-		WriteData((const char**)0x7FD9B0, "\aPlanez ou utilisez la roulade\nau lieu de le frapper pour le battre!");
-		WriteData((const char**)0x7FDA00, "\aFrappez les\nbulles d'eau!");
+		WriteData((const char**)0x7FD960, "\aVisez la t\u00eate de Chaos\nquand il ne s'y attend pas !");
+		WriteData((const char**)0x7FD9B0, "\aPlanez ou utilisez la roulade\nau lieu de le frapper pour le battre !");
+		WriteData((const char**)0x7FDA00, "\aFrappez les\nbulles d'eau !");
 		// Chaos 4
 		WriteData((const char**)0x7FE450, "\aQuand Chaos sort la t\u00eate de l'eau,\nc'est le moment de l'attaquer.");
 		// Chaos 6
