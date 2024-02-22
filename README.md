@@ -9,7 +9,7 @@ Le mod est compatible avec les textures du jeu de base et les textures de la ver
 
 Kesnos : traducteur
 
-kawaiikaorichan : codes
+kawaiikaorichan : Aide pour le code
 
 Windii : A fait la traduction originale
 
@@ -19,8 +19,8 @@ The sonic wiki : Pour les noms originaux des améliorations
 
 X-Hax : SA-tools et l'HD GUI 2
 
-KrisVDM : plugin "Drop Shadow and other effects" pour Paint.net
+KrisVDM : Plugin "Drop Shadow and other effects" pour Paint.net
 
-www.sonicnotes.info : polices d'écritures
+www.sonicnotes.info : Polices d'écriture
 
-Gray Graphics : police d'écriture "Milky Well"
+Gray Graphics : Police d'écriture "Milky Well"
