@@ -25,7 +25,7 @@ DataArray(TitleCardTexture, SubgameTitleCards, 0x91C4A0, 5);
 
 extern "C"
 {
-	__declspec(dllexport) __declspec(dllexport) void __cdecl Init(const char* path, const HelperFunctions& helperFunctions)
+	__declspec(dllexport) void __cdecl Init(const char* path, const HelperFunctions& helperFunctions)
 	{
 		// Chao Garden Hint Monitor
 		WriteData((const char**)0x887738, "QUIT.");
@@ -51,17 +51,17 @@ extern "C"
 		WriteData((const char**)0x4B54DB, "'%s'\na \u00e9t\u00e9 ajout\u00e9 \u00e0 la liste de jeux Game Gear."); // fr
 		
 		// New lure messages
-		WriteData((const char**)0x9818A0, "\aPowerup de l'app\u00e2t!"); // fr
+		WriteData((const char**)0x9818A0, "\aPowerup de l'app\u00e2t !"); // fr
 		WriteData((const char**)0x9818A4, "\aUtilise-le pour attraper de\nplus gros poissons !"); // fr
 		
 		// Keys messages
-		WriteData((const char**)0x111C6A8, "\aLa clé flotte..."); // fr
-		WriteData((const char**)0x111C680, "\aCela doit \u00eatre une autre clé..."); // fr
-		WriteData((const char**)0x7D3AB1, "\aUne statue en argent...\nElle ressemble \u00e0 une clé."); // fr
-		WriteData((const char**)0x7D3A72, "\aUne statue en or...\nElle ressemble \u00e0 une clé."); // fr
-		WriteData((const char**)0x7D3A2B, "\aLa Pierre des vents. On dirait une clé.\nLe motif sur la pierre doit contenir un message."); // fr
-		WriteData((const char**)0x7D39E0, "\aLa pierre des glaces. On dirait une clé.\nJe pourrais peut \u00eatre l'utiliser aux Mystic Ruins."); // fr
-		WriteData((const char**)0x2BBF538, "\aLa pierre des glaces... On dirait une clé.\nJe pourrais peut \u00eatre l'utiliser aux Mystic Ruins."); // fr
+		WriteData((const char**)0x111C6A8, "\aLa cl\u00e9 flotte..."); // fr
+		WriteData((const char**)0x111C680, "\aCela doit \u00eatre une autre cl\u00e9..."); // fr
+		WriteData((const char**)0x7D3AB1, "\aUne statue en argent...\nElle ressemble \u00e0 une cl\u00e9."); // fr
+		WriteData((const char**)0x7D3A72, "\aUne statue en or...\nElle ressemble \u00e0 une cl\u00e9."); // fr
+		WriteData((const char**)0x7D3A2B, "\aLa Pierre des vents. On dirait une cl\u00e9.\nLe motif sur la pierre doit contenir un message."); // fr
+		WriteData((const char**)0x7D39E0, "\aLa pierre des glaces. On dirait une cl\u00e9.\nJe pourrais peut \u00eatre l'utiliser aux Mystic Ruins."); // fr
+		WriteData((const char**)0x2BBF538, "\aLa pierre des glaces... On dirait une cl\u00e9.\nJe pourrais peut \u00eatre l'utiliser aux Mystic Ruins."); // fr
 		
 		// Deleting file messages	
 		WriteData((const char**)0x10D7A44, "\aValider"); // fr
@@ -85,11 +85,11 @@ extern "C"
 		WriteData((const char**)0x2BC07B8, "\aLa carte d'un employ\u00e9 ! Je pourrais peut-être \nl'utiliser pour entrer dans ce b\u00e2timent."); // fr
 		WriteData((const char**)0x2BC07E0, "\aV\u00e9rification de l'identit\u00e9"); // fr
 		WriteData((const char**)0x2BBF470, "\aUne carte-passe ! Je vais pouvoir faire\nle Twinkle Circuit."); // fr
-		WriteData((const char**)0x2BBF468, "\aBienvenue \u00e0 Twinkle Circuit!"); // fr
+		WriteData((const char**)0x2BBF468, "\aBienvenue \u00e0 Twinkle Circuit !"); // fr
 		
 		// Tikal's messages
-		WriteData((const char**)0x88C730, "\aPar ici!"); //  fr
-		WriteData((const char**)0x803484, "\aAttention! Il pr\u00e9pare un mauvais coup."); // fr
+		WriteData((const char**)0x88C730, "\aPar ici !"); //  fr
+		WriteData((const char**)0x803484, "\aAttention ! Il pr\u00e9pare un mauvais coup."); // fr
 		// Chaos 0  (when timer is 01:00:00)
 		WriteData((const char**)0x7FD51C, "\aSautez et appuyez de nouveau sur le\nbouton de saut pour faire une Homing Attack !");
 		// Chaos 2
@@ -101,30 +101,30 @@ extern "C"
 		// Chaos 6
 		WriteData((const char**)0x7FEBA8, "\aEssayez de trouver un moyen\nde geler Chaos.");
 		WriteData((const char**)0x7FEBF8, "Jetez les bombes d'Eggman\ndans la bouche de Chaos.");
-		WriteData((const char**)0x7FEC48, "\aVisez la grenouille\npuis lancez votre ligne!"); // fr
+		WriteData((const char**)0x7FEC48, "\aVisez la grenouille\npuis lancez votre ligne !"); // fr
 		WriteData((const char**)0x7FECA8, "\aLancez votre ligne");
 		WriteData((const char**)0x7FECB0, "\aquand Chaos s'approche de vous");
 		
 		// Egg Walker
 		WriteData((const char**)0x801D54, "\aL'Egg Mobile est son point faible.\nAttaquez-la quand elle s'approche de vous.");
 		WriteData((const char**)0x802D00, "\aVisez-les jambes\npour qu'il perde l'équilibre.");
-		WriteData((const char**)0x802D10, "\aMais ne visez pas que les jambes.\nVisez aussi le cockpit!");
+		WriteData((const char**)0x802D10, "\aMais ne visez pas que les jambes.\nVisez aussi le cockpit !");
 
 		// Egg Viper
-		WriteData((const char**)0x803444, "\aEggman est de l'autre côt\u00e9\nlà où l'\u00e9nergie se rassemble.");
+		WriteData((const char**)0x803444, "\aEggman est de l'autre c\u00f4t\u00e9\nl\u00e0 o\u00f9 l'\u00e9nergie se rassemble.");
 		WriteData((const char**)0x803454, "\aFaites plusieurs Homing Attack...");
 		WriteData((const char**)0x803464, "\aEt visez le cockpit.");
 		
 		// if you take damage twice from a spinning thing
-		WriteData((const char**)0x803474, "\aMontez sur la toupie à \u00e9pines\net vous arriverez jusqu'au cockpit.");
+		WriteData((const char**)0x803474, "\aMontez sur la toupie \u00e0 \u00e9pines\net vous arriverez jusqu'au cockpit.");
 		
 		// ZERO (when timer is 01:00:00)
 		WriteData((const char**)0x8046E4, "\aIl doit bien avoir un point faible.");
-		WriteData((const char**)0x8046EC, "\aContinuez de l'attaquer jusqu'à \nce que vous le trouviez!");
+		WriteData((const char**)0x8046EC, "\aContinuez de l'attaquer jusqu'\u00e0 \nce que vous le trouviez !");
 		
 		// Perfect Chaos
-		WriteData((const char**)0x800544, "\aQuand vous atteindrez votre vitesse maximale,\nvous deviendrez une boule électrique.");
-		WriteData((const char**)0x80054C, "\aC'est avec \u00e7a que vous parviendrez \u00e0 attaquer Chaos!");
+		WriteData((const char**)0x800544, "\aQuand vous atteindrez votre vitesse maximale,\nvous deviendrez une boule \u00e9lectrique.");
+		WriteData((const char**)0x80054C, "\aC'est avec \u00e7a que vous parviendrez \u00e0 attaquer Chaos !");
 
 		//Mission tutorial texts
 		//region fr
