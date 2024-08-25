@@ -23,6 +23,12 @@ DataArray(TitleCardTexture, SubgameTitleCards, 0x91C4A0, 5);
 	helperFunctions.ReplaceFile("system\\" a ".PVR", pathbuf); \
 } while (0)
 
+#define ReplacePNG_MissionS(a) do { \
+	_snprintf_s(pathbuf, LengthOfArray(pathbuf), "%s\\textures\\pvr_mission_fr\\index.txt", path); \
+	helperFunctions.ReplaceFile("system\\" a ".PVR", pathbuf); \
+} while (0)
+
+
 extern "C"
 {
 	__declspec(dllexport) void __cdecl Init(const char* path, const HelperFunctions& helperFunctions)
@@ -60,8 +66,8 @@ extern "C"
 		WriteData((const char**)0x7D3AB1, "\aUne statue en argent...\nElle ressemble \u00e0 une cl\u00e9."); // fr
 		WriteData((const char**)0x7D3A72, "\aUne statue en or...\nElle ressemble \u00e0 une cl\u00e9."); // fr
 		WriteData((const char**)0x7D3A2B, "\aLa Pierre des vents. On dirait une cl\u00e9.\nLe motif sur la pierre doit contenir un message."); // fr
-		WriteData((const char**)0x7D39E0, "\aLa pierre des glaces. On dirait une cl\u00e9.\nJe pourrais peut \u00eatre l'utiliser aux Mystic Ruins."); // fr
-		WriteData((const char**)0x2BBF538, "\aLa pierre des glaces... On dirait une cl\u00e9.\nJe pourrais peut \u00eatre l'utiliser aux Mystic Ruins."); // fr
+		WriteData((const char**)0x7D39E0, "\aLa Pierre des glaces. On dirait une cl\u00e9.\nJe pourrais peut \u00eatre l'utiliser aux Mystic Ruins."); // fr
+		WriteData((const char**)0x2BBF538, "\aLa Pierre des glaces... On dirait une cl\u00e9.\nJe pourrais peut \u00eatre l'utiliser aux Mystic Ruins."); // fr
 		
 		// Deleting file messages	
 		WriteData((const char**)0x10D7A44, "\aValider"); // fr
@@ -77,12 +83,13 @@ extern "C"
 		WriteData((const char**)0x111CB68, "\a\u00c7a dit \"destructeur de singes\"."); // fr
 
 
-		WriteData((const char**)0x111CB6C, "\a'Appuyez sur le bouton pour d\u00e9truire le singe."); // fr
+		WriteData((const char**)0x111CB6C, "\aAppuyez sur le bouton pour d\u00e9truire le singe."); // fr
 		WriteData((const char**)0x111CB38, "\aInterrupteur activ\u00e9 !"); // fr
+		WriteData((const char**)0x111CAE8, "\aLe bouton a \u00e9t\u00e9 press\u00e9,\nmais rien ne s'est pass\u00e9."); // fr
 		WriteData((const char**)0x111CB10, "\aLe bouton a \u00e9t\u00e9 press\u00e9,\nmais rien ne s'est pass\u00e9."); // fr
 
 		// Station Square cards messages
-		WriteData((const char**)0x2BC07B8, "\aLa carte d'un employ\u00e9 ! Je pourrais peut-être \nl'utiliser pour entrer dans ce b\u00e2timent."); // fr
+		WriteData((const char**)0x2BC07B8, "\aLa carte d'un employ\u00e9 ! Je pourrais peut-\u00eatre \nl'utiliser pour entrer dans ce b\u00e2timent."); // fr
 		WriteData((const char**)0x2BC07E0, "\aV\u00e9rification de l'identit\u00e9"); // fr
 		WriteData((const char**)0x2BBF470, "\aUne carte-passe ! Je vais pouvoir faire\nle Twinkle Circuit."); // fr
 		WriteData((const char**)0x2BBF468, "\aBienvenue \u00e0 Twinkle Circuit !"); // fr
@@ -94,20 +101,20 @@ extern "C"
 		WriteData((const char**)0x7FD51C, "\aSautez et appuyez de nouveau sur le\nbouton de saut pour faire une Homing Attack !");
 		// Chaos 2
 		WriteData((const char**)0x7FD960, "\aVisez la t\u00eate de Chaos\nquand il ne s'y attend pas !");
-		WriteData((const char**)0x7FD9B0, "\aPlanez ou utilisez la roulade\nau lieu de le frapper pour le battre !");
+		WriteData((const char**)0x7FD9B0, "\aPlanez ou utilisez le saut\nau lieu de le frapper pour le battre !");
 		WriteData((const char**)0x7FDA00, "\aFrappez les\nbulles d'eau !");
 		// Chaos 4
 		WriteData((const char**)0x7FE450, "\aQuand Chaos sort la t\u00eate de l'eau,\nc'est le moment de l'attaquer.");
 		// Chaos 6
 		WriteData((const char**)0x7FEBA8, "\aEssayez de trouver un moyen\nde geler Chaos.");
-		WriteData((const char**)0x7FEBF8, "Jetez les bombes d'Eggman\ndans la bouche de Chaos.");
+		WriteData((const char**)0x7FEBF8, "Jetez les bombes d'Eggman\ndans la gueule de Chaos.");
 		WriteData((const char**)0x7FEC48, "\aVisez la grenouille\npuis lancez votre ligne !"); // fr
 		WriteData((const char**)0x7FECA8, "\aLancez votre ligne");
 		WriteData((const char**)0x7FECB0, "\aquand Chaos s'approche de vous");
 		
 		// Egg Walker
 		WriteData((const char**)0x801D54, "\aL'Egg Mobile est son point faible.\nAttaquez-la quand elle s'approche de vous.");
-		WriteData((const char**)0x802D00, "\aVisez-les jambes\npour qu'il perde l'équilibre.");
+		WriteData((const char**)0x802D00, "\aVisez-les jambes\npour qu'il perde l'\u00e9quilibre.");
 		WriteData((const char**)0x802D10, "\aMais ne visez pas que les jambes.\nVisez aussi le cockpit !");
 
 		// Egg Viper
@@ -150,25 +157,48 @@ extern "C"
 		WriteData((const char**)0x40BE09, "Chargement...");
 		WriteData((const char**)0x50342D, "Chargement...");
 		WriteData((const char**)0x503469, "Chargement...");
-		WriteData((const char**)0x504B5B, "Nouvelle Partie");
+		WriteData((const char**)0x504B5B, "Nouvelle partie");
 		WriteData((const char**)0x5482A8, "Chaos 0");
 		WriteData((const char**)0x54CCFE, "Chaos 2");
 		WriteData((const char**)0x5509DC, "Chaos 4");
 		WriteData((const char**)0x559872, "Chaos 6");
 		WriteData((const char**)0x56037F, "Perfect Chaos");
 		WriteData((const char**)0x587DA4, "ZERO");
+		WriteData((const char**)0x7595DF, "APPUIE SUR A POUR ABANDONNER LE CHAO");
+
+
+		// Hedgehog Hammer (Story) NEEDS CUSTOM MOGURATATAKI ARCHIEVE!!!
+		WriteData((const char**)0x52843D, "MEILLEUR SCORE");
+		WriteData((const char**)0x528467, "PTS");
+		WriteData((const char**)0x52849A, "PTS");
+		WriteData((const char**)0x5284E5, "DOCTEUR EGGMAN");
+		WriteData((const char**)0x528549, "COMMENCER");
+		WriteData((const char**)0x528599, "TEMPS");
+		WriteData((const char**)0x5285A8, "COMPTEUR");
+		WriteData((const char**)0x5285E9, "PTS");
+		WriteData((const char**)0x528632, "PTS");
+		WriteData((const char**)0x5286D1, "GAME OVER");
+		WriteData((const char**)0x528728, "BRAVO");
+		WriteData((const char**)0x528790, "TU REMPORTES LA PLUME DU GUERRIER");
+		WriteData((const char**)0x5287A3, "TU REMPORTES LE GROS MARTEAU");
+		WriteData((const char**)0x5287FA, "TU AS LE MEILLEUR SCORE");
+
+		// Hedgehog Hammer (Mini Game) NEEDS CUSTOM MOGURATATAKI ARCHIEVE!!!
 		WriteData((const char**)0x62616D, "MEILLEUR SCORE");
+		WriteData((const char**)0x626197, "PTS");
+		WriteData((const char**)0x6261CA, "PTS");
 		WriteData((const char**)0x626215, "DOCTEUR EGGMAN");
 		WriteData((const char**)0x626279, "COMMENCER");
 		WriteData((const char**)0x6262C9, "TEMPS");
 		WriteData((const char**)0x6262D8, "COMPTEUR");
+		WriteData((const char**)0x626319, "PTS");
+		WriteData((const char**)0x626362, "PTS");
 		WriteData((const char**)0x626401, "GAME OVER");
 		WriteData((const char**)0x626458, "BRAVO");
 		WriteData((const char**)0x6264C0, "TU REMPORTES LA PLUME DU GUERRIER");
 		WriteData((const char**)0x6264D3, "TU REMPORTES LE GROS MARTEAU");
 		WriteData((const char**)0x62652A, "TU AS LE MEILLEUR SCORE");
 		WriteData((const char**)0x6283F5, "GAME OVER");
-		WriteData((const char**)0x7595DF, "APPUIE SUR A POUR ABANDONNER LE CHAO");
 		char pathbuf[MAX_PATH];
 		HMODULE HDGUI = GetModuleHandle(L"HD_GUI");
 		//PVRs
@@ -275,6 +305,13 @@ extern "C"
 			ReplacePNG_StageS("T_EGGCARRIER_F");
 			ReplacePNG_StageS("T_MISTICRUIN_F");
 			ReplacePNG_StageS("T_STATIONSQUARE_F");
+			ReplacePNG_MissionS("MISSION_K_NOHINT_F");
+			ReplacePNG_MissionS("MISSION_S_EMECASINO_F");
+			ReplacePNG_MissionS("MISSION_S_EMESNOW_F");
+			ReplacePNG_MissionS("MISSION_S_EMEWIND_F");
+			ReplacePNG_MissionS("MISSION_T_FASTEGG_F");
+			ReplacePNG_MissionS("MISSION_T_MISS_F");
+			ReplacePNG_MissionS("MISSION_T_RINGEGG_F");
 		}
 	}
 
